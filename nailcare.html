@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Design Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+       .hero{
+            background: url('images/fd292f4f2fe98dbb28b74da1486359c8.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+        }
+        .service-box{
+            padding: 25px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: .3s;
+        }
+        .service-box:hover{
+            transform: translateY(-5px);
+        }
+        .gallery img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .footer {
+    background-color: #ff66a3;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3, .footer h4 {
+    
+    font-weight: 600;
+    margin-bottom: 10px; 
+    
+ }
+
+.footer-about p {
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a {
+  display: flex;
+  margin: 10px;
+  
+ }
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#ff66a3;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-white" href="#">NailArt Studio</a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+
+        <!-- Dropdown 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kids.html">Kids Designs</a></li>
+            <li><a class="dropdown-item" href="simple.html">Simple Designs</a></li>
+            <li><a class="dropdown-item" href="complex.html">Complex Designs</a></li>
+             <li><a class="dropdown-item" href="teen.html">Teen Designs</a></li>
+            <li><a class="dropdown-item" href="floral.html">Floral</a></li>
+            <li><a class="dropdown-item" href="geometric.html">Geometric</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="nail.html">View All</a></li>
+            <li><a class="dropdown-item" href="nailpolish.html">Nail Polish</a></li>
+            <li><a class="dropdown-item" href="brush.html">Brushes</a></li>
+            <li><a class="dropdown-item" href="sticker.html">Stickers</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-white" href="nailcare.html">Nail Care</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="feedback.html">Feedback</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="d-flex align-items-center gap-4">
+        <a href="#" class="text-white fs-5"><i class="bi bi-search"></i></a>
+        <a href="add-to-cart.html" class="text-white fs-5"><i class="bi bi-cart"></i></a>
+        <a href="login.html" class="text-white fs-5"><i class="bi bi-person-circle"></i></a>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Professional Nail Care</h1>
+        <p>Expert nail care services focused on hygiene, health and beauty</p>
+        <!-- <a href="#contact" class="btn btn-light btn-lg mt-3">Book Appointment</a> -->
+    </div>
+</section>
+
+<!-- NAIL CARE TIPS -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Essential Nail Care Tips</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <h4>💧 Keep Nails Moisturized</h4>
+                    <p>Apply cuticle oil daily to strengthen and hydrate your nails.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <h4>✂️ Trim Regularly</h4>
+                    <p>Trim your nails every 2 weeks to prevent breakage and maintain shape.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <h4>🧤 Avoid Harsh Chemicals</h4>
+                    <p>Use gloves when cleaning to protect your nails and skin from chemicals.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Our Nail Services</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <img src="images/c8bbea7123deedc4867c3ec58058defc.jpg" class="img-fluid rounded mb-3">
+                    <h5>Classic Manicure</h5>
+                    <p>Includes cuticle care, nail shaping, massage, and polish.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <img src="images/434c8be2b7925a812866db6d59a01c8a.jpg" class="img-fluid rounded mb-3">
+                    <h5>Gel Polish</h5>
+                    <p>Shiny, long-lasting gel colors that stay perfect for up to 14 days.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <img src="images/87660fd93b79299d5c566d05b75460df.jpg" class="img-fluid rounded mb-3">
+                    <h5>Acrylic Nails</h5>
+                    <p>Customized shapes and lengths for a flawless acrylic nail look.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Before & After Transformations</h2>
+        <div class="row g-4 gallery">
+            <div class="col-md-4">
+                <img src="images/b7b8afd90d180a6efe1a26dd16775a08.jpg" alt="Before and After Nails">
+            </div>
+            <div class="col-md-4">
+                <img style="height: 100%;"  src="images/553fe694bec67c510efa86812d5dc9aa.jpg" alt="Nail Art">
+            </div>
+            <div class="col-md-4">
+                <img src="images/sub-buzz-10015-1673639952-26.jpg" alt="Nail Design">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" style="background-color: #ff66a3;">
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h3 class="fw-bold">NailArt Studio</h3>
+                <p>Express your style with stunning nail designs. Beauty begins at your fingertips.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled" >
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Contact</h4>
+                <p>Email: info@nailartstudio.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+<!-- follow link -->
+            <div class="col-md-3 col-sm-6 mb-3">
+             <h4 class="fw-bold">Follow Us</h4>
+             <a href="#" class="text-white d-block text-decoration-none">
+             <i class="fa-brands fa-instagram me-2"></i>Instagram
+            </a>
+             <a href="#" class="text-white d-block text-decoration-none">
+            <i class="fa-brands fa-facebook me-2"></i>Facebook
+            </a>
+          <a href="#" class="text-white d-block text-decoration-none">
+         <i class="fa-brands fa-pinterest me-2"></i>Pinterest
+           </a>
+</div>
+           
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center py-2">
+        <p class="m-0">© 2025 NailArt Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+</html>

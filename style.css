@@ -1,0 +1,395 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background:#fff7f9 ;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+ /* Gallery  */
+.gallery {
+  background-color: #fff0f6;
+  padding: 60px 0;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.designs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.design {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} 
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color:#ffe6ef;
+} 
+.btn{
+  margin-top: 30px;
+    cursor: pointer;
+    color:white;
+    display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff69b4; 
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: #ff3f9f; 
+  transform: translateY(-2px);
+}
+
+.gallery {
+  padding: 30px 0;
+  background-color:#fff0f6;
+
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0.3s ease;
+  
+}
+.card:hover{
+  transform: translateY(-8px);
+  scale: (1.03);
+  box-shadow: 0 10px 20px
+  rgba(0,0,0,0.15);
+}
+
+.card-img {
+  height: 350px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+
+.footer {
+    background-color: #ff66a3;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3, .footer h4 {
+    
+    font-weight: 600;
+    margin-bottom: 10px; 
+    
+ }
+
+.footer-about p {
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a {
+  display: flex;
+  margin: 10px;
+  
+ }
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+
+.hero {
+    background: url('images/c9e77a9450286439a6955526d0adbc53.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #ffb7d5;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Section Styling */
+.about-nailcare {
+  padding: 60px 20px;
+  background-color:#fff7f9; 
+}
+
+.about-nailcare .container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Heading */
+.about-nailcare h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff4da6; 
+}
+
+/* Paragraph */
+.about-nailcare p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* List */
+.about-nailcare ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-nailcare ul li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 17px;
+  color: #333;
+}
+
+/* Button */
+.about-nailcare .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff69b4; 
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about-nailcare .btn:hover {
+  background-color: #ff3f9f; 
+  transform: translateY(-2px);
+}
+.about {
+  padding: 80px 0;
+  background: #fff7f9; 
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ff66a3;
+}
+
+.about-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  color: #555;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.about-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.about-box h4 {
+  margin-bottom: 10px;
+  color: #ff66a3;
+}
+
+.products {
+  background: #fff0f6;
+}
+
+.products-intro {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-card h4 {
+  color: #d63384;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+.testimonials {
+  background: #fff7f9;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.testimonial-card {
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-card strong {
+  color: #444;
+}
+
+
+.arrow {
+  background: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 8px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+
+.arrow:hover {
+  background: #d63384;
+  color: #fff;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    min-width: 260px;
+  }
+}

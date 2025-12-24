@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>NailArt Studio - Home</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: url('images/1000_F_209833899_QiaLZtwWgxOPb9lZYixYYFOxf9KtdFUu.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #ffb7d5;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #ff4f9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2c83;
+}
+
+/* STORY */
+.story {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.story h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ff66a3;
+}
+
+/* SERVICES */
+.services {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff66a3;
+}
+
+.service-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 300px;
+    background: #ffe1ee;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* BEFORE AFTER */
+.before-after {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.ba-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ba-img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* CHOOSE US */
+.choose {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.choose-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choose-card {
+    width: 250px;
+    background: #ffe9f2;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* FEATURED */
+.featured {
+    padding: 50px 10%;
+    text-align: center;
+  
+}
+
+.featured-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    
+}
+
+.featured-grid img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* OFFER */
+.offer {
+    padding: 50px 10%;
+    text-align: center;
+    background: #ffb7d5;
+    color: white;
+}
+
+.offer .btn {
+    background: white;
+    color: #ff007b;
+}
+
+/* PROCESS */
+.process {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.step span {
+    width: 50px;
+    height: 50px;
+    background: #ff4f9a;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* CTA */
+.cta {
+    padding: 60px 10%;
+    background: #ffe1ee;
+    text-align: center;
+}
+
+.footer {
+    background: #FFB6C1;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3, .footer h4 {
+    
+    font-weight: 600;
+    margin-bottom: 10px; 
+    
+ }
+
+.footer-about p {
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-social a {
+  display: flex;
+  margin: 10px;
+  
+  
+
+}
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #d14ba0;
+    cursor: pointer;
+    transition: 0.3s;
+  
+     
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.before-after {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ba-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ba-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .ba-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ba-img {
+    max-width: 90%;
+  }
+}
+
+
+
+    </style>
+    
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#ff66a3;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-white" href="#">NailArt Studio</a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+
+        <!-- Dropdown 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kids.html">Kids Designs</a></li>
+            <li><a class="dropdown-item" href="simple.html">Simple Designs</a></li>
+            <li><a class="dropdown-item" href="complex.html">Complex Designs</a></li>
+             <li><a class="dropdown-item" href="teen.html">Teen Designs</a></li>
+            <li><a class="dropdown-item" href="floral.html">Floral</a></li>
+            <li><a class="dropdown-item" href="geometric.html">Geometric</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="nail.html">View All</a></li>
+            <li><a class="dropdown-item" href="nailpolish.html">Nail Polish</a></li>
+            <li><a class="dropdown-item" href="brush.html">Brushes</a></li>
+            <li><a class="dropdown-item" href="sticker.html">Stickers</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-white" href="nailcare.html">Nail Care</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">feedback</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="d-flex align-items-center gap-4">
+        <a href="#" class="text-white fs-5"><i class="bi bi-search"></i></a>
+        <a href="add-to-cart.html" class="text-white fs-5"><i class="bi bi-cart"></i></a>
+        <a href="login.html" class="text-white fs-5"><i class="bi bi-person-circle"></i></a>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to nailArt Studio</h1>
+            <p>Where Style Meets Perfection</p>
+            <a href="appointment.html" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+
+    <section class="story">
+        <h2>Our Brand Story</h2>
+        <p>We believe nails are more than beauty — they are confidence, elegance, and expression. With premium 
+        products and expert nail artists, we bring creativity to your fingertips.</p>
+    </section>
+
+
+    <!--SERVICES -->
+    <section class="services">
+        <h2>Signature Services</h2>
+
+        <div class="service-boxes">
+
+            <div class="service-card">
+                <img src="images/96260451bcdb44bf9e0bdd819a1d2c70.jpg" alt="">
+                <h3>Gel Nail Polish</h3>
+                <p>Long-lasting glossy premium finish.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/bde4597ede5b40c8653b089e2ea8a181.avif" alt="">
+                <h3>Bridal Nail Art</h3>
+                <p>Luxury bridal designs with stones & premium art.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/5b05055687e21d153761dd71ca7dad59.jpg" alt="">
+                <h3>Spa Manicure</h3>
+                <p>Hydrating spa with scrub, mask & massage.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+
+    <section class="before-after">
+  <h2>Before / After Transformations</h2>
+
+  <div class="ba-container">
+    <img src="images/ca4382340ce099faf985383d1f80b69b.jpg" 
+         class="ba-img" 
+         alt="Before">
+
+    <img src="images/a35c2128e22daba7eddf7b20d0d51e9a.jpg" 
+         class="ba-img" 
+         alt="After">
+  </div>
+</section>
+
+
+    
+    <section class="choose">
+        <h2>Why Choose Us</h2>
+
+        <div class="choose-boxes">
+
+            <div class="choose-card">
+                <h3>Premium Hygiene</h3>
+                <p>We use sterilized tools for every client.</p>
+            </div>
+
+            <div class="choose-card">
+                <h3>Professional Artists</h3>
+                <p>Experienced certified nail technicians.</p>
+            </div>
+
+            <div class="choose-card">
+                <h3>Top Quality Products</h3>
+                <p>Only global brand polishes & gels.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="featured">
+        <h2>Featured Designs of the Week</h2>
+
+        <div class="featured-grid">
+            <img src="images/9faa7f83c48e6478b7c4ed7273ae1520.jpg" alt="">
+            <img src="images/1ab20d0dd16064f52c1a25474220ac4c.jpg" alt="">
+            <img src="images/715ca45210ea66b603612b1704f1221a.jpg" alt="">
+            <img src="images/8aaa7e915c4b47284b9492d90d14358e.jpg" alt="">
+        </div>
+    </section>
+
+
+    
+    <section class="offer">
+        <h2>First-Time Visitor Offer</h2>
+        <p>Enjoy <strong>10% OFF</strong> on your first visit! Limited Time Only.</p>
+        <a href="#" class="btn">Claim Offer</a>
+    </section>
+
+
+
+    <section class="process">
+        <h2>How It Works</h2>
+
+        <div class="process-steps">
+
+            <div class="step">
+                <span>1</span>
+                <p>Select Your Style</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <p>Meet Our Artist</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <p>Get Perfect Nails</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section class="cta">
+        <h2>Ready for Stunning Nails?</h2>
+        <p>Book an appointment now and transform your look!</p>
+        <a href="appointment.html" class="btn">Book Now</a>
+    </section>
+
+
+    <!-- footer -->
+<footer class="footer" style="background-color: #ff66a3;">
+    <div class="container py-4">
+        <div class="row">
+
+            
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h3 class="fw-bold">NailArt Studio</h3>
+                <p>Express your style with stunning nail designs. Beauty begins at your fingertips.</p>
+            </div>
+
+            
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled" >
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+           
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Contact</h4>
+                <p>Email: info@nailartstudio.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 mb-3">
+             <h4 class="fw-bold">Follow Us</h4>
+             <a href="#" class="text-white d-block text-decoration-none">
+             <i class="fa-brands fa-instagram me-2"></i>Instagram
+            </a>
+             <a href="#" class="text-white d-block text-decoration-none">
+            <i class="fa-brands fa-facebook me-2"></i>Facebook
+            </a>
+          <a href="#" class="text-white d-block text-decoration-none">
+         <i class="fa-brands fa-pinterest me-2"></i>Pinterest
+           </a>
+</div>
+           
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center py-2">
+        <p class="m-0">© 2025 NailArt Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

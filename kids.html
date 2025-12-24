@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Design Categories</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: 'arial', sans-serif;
+        }
+        .page-header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .page-header h1 {
+            color: #ff66a3;
+            font-size: 2.3rem;
+            margin: 0;
+        }
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+        }
+        .card-img-top {
+            height: 400px;
+            object-fit: cover;
+        }
+        .card-title {
+            color: black;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .btn-custom {
+            background-color: #ff66a3;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #b82a6e;
+        }
+        .footer {
+    background-color: #ff66a3;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3, .footer h4 {
+    
+    font-weight: 600;
+    margin-bottom: 10px; 
+    
+ }
+
+.footer-about p {
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a {
+  display: flex;
+  margin: 10px;
+  
+ }
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#ff66a3;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-white" href="#">NailArt Studio</a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+
+        <!-- Dropdown 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kids.html">Kids Designs</a></li>
+            <li><a class="dropdown-item" href="simple.html">Simple Designs</a></li>
+            <li><a class="dropdown-item" href="complex.html">Complex Designs</a></li>
+             <li><a class="dropdown-item" href="teen.html">Teen Designs</a></li>
+            <li><a class="dropdown-item" href="floral.html">Floral</a></li>
+             <li><a class="dropdown-item" href="geometric.html">Geometric</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="nail.html">View All</a></li>
+            <li><a class="dropdown-item" href="nailpolish.html">Nail Polish</a></li>
+            <li><a class="dropdown-item" href="brush.html">Brushes</a></li>
+            <li><a class="dropdown-item" href="sticker.html">Stickers</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-white" href="nailcare.html">Nail Care</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="feedback.html">Feedback</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="d-flex align-items-center gap-4">
+        <a href="#" class="text-white fs-5"><i class="bi bi-search"></i></a>
+        <a href="add-to-cart.html" class="text-white fs-5"><i class="bi bi-cart"></i></a>
+        <a href="login.html" class="text-white fs-5"><i class="bi bi-person-circle"></i></a>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</nav>
+
+    <div class="page-header">
+        <h1 class="fw-bold">Easy Designs For Kids</h1>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+
+           
+            <div class="col-md-4">
+                <a href="product.html?id=10" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/bc9109e13f77e3ba3789d981173c1a13.jpg" class="card-img-top" alt="Flower Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Star Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col-md-4">
+                <a href="product.html?id=11" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/085ba7d21491c9cbbbe722c2a8b35968.jpg" class="card-img-top" alt="Cherry Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Snoopy Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col-md-4">
+                <a href="product.html?id=12" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/ee5dd65acd6fd8ec487fd455522bab4e.jpg" class="card-img-top" alt="Bow Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Multi-Color Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="product.html?id=13" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/0d3e11821b5d66bada90f7fdeb885af9.jpg" class="card-img-top" alt="Smiley Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Multi Bow Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          
+            <div class="col-md-4">
+                <a href="product.html?id=14" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/96327280549bbf35ae9e934021c5cda4.jpg" class="card-img-top" alt="Nude Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Cute Rabbit Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          
+            <div class="col-md-4">
+                <a href="product.html?id=15" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/ae7e5ded1569793110ad691e1b147c31.jpg" class="card-img-top" alt="Glossy Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Multi Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+         
+            <div class="col-md-4">
+                <a href="product.html?id=16" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/7e5afe336ceff25591e146b4c2200c9f.jpg" class="card-img-top" alt="Heart Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Purple Flower Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+           
+            <div class="col-md-4">
+                <a href="product.html?id=17" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/651608e14821362762a2860eb2ba1801.jpg" class="card-img-top" alt="Marble Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Cat Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="product.html?id=18" class="text-decoration-none">
+                    <div class="card h-100">
+                        <img src="images/1fad192c8fa0f7a87d53bd8ea577d61d.jpg" class="card-img-top" alt="Marble Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Glitter Design</h5>
+                            <button class="btn btn-custom w-100">View Details</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer" style="background-color: #ff66a3;">
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-3 col-sm-6 mb-3 text-white">
+                <h3 class="fw-bold">NailArt Studio</h3>
+                <p>Express your style with stunning nail designs. Beauty begins at your fingertips.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold text-white">Quick Links</h4>
+                <ul class="list-unstyled" >
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 col-sm-6 mb-3 text-white">
+                <h4 class="fw-bold">Contact</h4>
+                <p>Email: info@nailartstudio.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+<!-- follow link -->
+            <div class="col-md-3 col-sm-6 mb-3">
+             <h4 class="fw-bold text-white">Follow Us</h4>
+             <a href="#" class="text-white d-block text-decoration-none">
+             <i class="fa-brands fa-instagram me-2"></i>Instagram
+            </a>
+             <a href="#" class="text-white d-block text-decoration-none">
+            <i class="fa-brands fa-facebook me-2"></i>Facebook
+            </a>
+          <a href="#" class="text-white d-block text-decoration-none">
+         <i class="fa-brands fa-pinterest me-2"></i>Pinterest
+           </a>
+</div>
+           
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center py-2" style="color: white;">
+        <p class="m-0">© 2025 NailArt Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

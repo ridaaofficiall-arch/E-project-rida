@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nails Product Detail</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+*{box-sizing:border-box;}
+body{
+    font-family: Arial, sans-serif;
+    background:#f6f6f6;
+}
+
+/* Product Section */
+.product-box{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+}
+
+/* Image */
+.product-image{
+    height:400px;
+    overflow:hidden;
+    border-radius:10px;
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Details */
+.product-details h1{
+    font-size:30px;
+    font-weight:bold;
+    color:#ff66a3;
+    margin-bottom:20px;
+}
+.section{margin-bottom:20px;}
+.section h3{font-size:18px;margin-bottom:8px;}
+.section p,.section li{color:#555;line-height:1.6;}
+.price{font-size:26px;font-weight:bold;}
+
+/* Button */
+.add-to-cart{
+    width:100%;
+    padding:16px;
+    background:#ff66a3;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    transition:.3s;
+}
+.add-to-cart:hover{
+    background:#ff3f9f;
+    transform:translateY(-2px);
+}
+
+.footer {
+    background-color: #ff66a3;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+}
+
+.footer h3, .footer h4 {
+    
+    font-weight: 600;
+    margin-bottom: 10px; 
+    
+ }
+
+.footer-about p {
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a {
+  display: flex;
+  margin: 10px;
+  
+ }
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.product-image img {
+    transition: transform 0.4s ease;
+}
+
+.product-image:hover img {
+    transform: scale(1.15);
+}
+.thumb{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+.thumb:hover{
+    border-color:#ff66a3;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#ff66a3;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-white" href="#">NailArt Studio</a>
+
+    <!-- Toggle button (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+
+        <!-- Dropdown 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="kids.html">Kids Designs</a></li>
+            <li><a class="dropdown-item" href="simple.html">Simple Designs</a></li>
+            <li><a class="dropdown-item" href="complex.html">Complex Designs</a></li>
+            <li><a class="dropdown-item" href="floral.html">Floral</a></li>
+            <li><a class="dropdown-item" href="geometric.html">Geometric</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="nail.html">View All</a></li>
+            <li><a class="dropdown-item" href="nailpolish.html">Nail Polish</a></li>
+            <li><a class="dropdown-item" href="brush.html">Brushes</a></li>
+            <li><a class="dropdown-item" href="sticker.html">Stickers</a></li>
+            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-white" href="nailcare.html">Nail Care</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="feedback.html">Feedback</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="d-flex align-items-center gap-4">
+        <a href="#" class="text-white fs-5"><i class="bi bi-search"></i></a>
+        <a href="add-to-cart.html" class="text-white fs-5"><i class="bi bi-cart"></i></a>
+        <a href="login.html" class="text-white fs-5"><i class="bi bi-person-circle"></i></a>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- PRODUCT DETAIL -->
+<div class="container my-5">
+<div class="row justify-content-center">
+<div class="col-12 product-box">
+
+<div class="row g-4 align-items-center">
+
+
+<div class="col-lg-5 col-md-6">
+
+  <!-- Back Arrow -->
+  <a href="index.html" class="text-decoration-none text-dark mb-2 d-inline-block">
+    <i class="bi bi-arrow-left fs-4"></i> Back to Products
+  </a>
+
+  <!-- Main Image -->
+  <div class="product-image mb-3">
+    <img id="mainImage"
+         src="images/ae7e5ded1569793110ad691e1b147c31.jpg"
+         class="img-fluid rounded">
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="d-flex gap-2">
+    <img id="thumb1" src="images/ae7e5ded1569793110ad691e1b147c31.jpg"
+         class="img-thumbnail thumb"
+         onclick="changeImage(this.src)">
+
+    <img src="images/il_1588xN.6562108903_7bam.webp"
+         class="img-thumbnail thumb"
+         onclick="changeImage(this.src)">
+
+    <img src="images/il_1588xN.6562108893_4x7u.webp"
+         class="img-thumbnail thumb"
+         onclick="changeImage(this.src)">
+  </div>
+
+</div>
+
+
+<!-- DETAILS -->
+<div class="col-lg-7 col-md-6">
+<div class="product-details">
+
+<h1 id="productName">Luxury Pink Press-On Nails</h1>
+
+<div class="section">
+<h3>Design Description</h3>
+<p id="productDescription">Elegant pastel pink press-on nails with a glossy finish. Designed for a classy and modern look.</p>
+</div>
+
+<div class="section">
+<h3>Details</h3>
+<ul>
+<li>Reusable press-on nails</li>
+<li>Long-lasting shine</li>
+<li>Easy to apply</li>
+<li>Lightweight design</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>Price Details</h3>
+<p class="price" id="productPrice">Rs. 1,990</p>
+<small>Free delivery above Rs. 3,000</small>
+</div>
+
+<a href="add-to-cart.html"><button class="add-to-cart">ADD TO CART</button></a>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<footer class="footer" style="background-color: #ff66a3;">
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h3 class="fw-bold">NailArt Studio</h3>
+                <p>Express your style with stunning nail designs. Beauty begins at your fingertips.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled" >
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h4 class="fw-bold">Contact</h4>
+                <p>Email: info@nailartstudio.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+<!-- follow link -->
+            <div class="col-md-3 col-sm-6 mb-3">
+             <h4 class="fw-bold">Follow Us</h4>
+             <a href="#" class="text-white d-block text-decoration-none">
+             <i class="fa-brands fa-instagram me-2"></i>Instagram
+            </a>
+             <a href="#" class="text-white d-block text-decoration-none">
+            <i class="fa-brands fa-facebook me-2"></i>Facebook
+            </a>
+          <a href="#" class="text-white d-block text-decoration-none">
+         <i class="fa-brands fa-pinterest me-2"></i>Pinterest
+           </a>
+</div>
+           
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center py-2">
+        <p class="m-0">© 2025 NailArt Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+function changeImage(src){
+    document.getElementById("mainImage").src = src;
+}
+</script>
+
+<script src="product.js"></script>
+<script src="product-detail.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
